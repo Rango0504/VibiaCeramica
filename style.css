@@ -1,0 +1,137 @@
+* {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+body {
+    background-image: url(imgs/marble.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+    margin: 0;
+}
+nav {
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+nav .logo {
+    float: right;
+    width: 200px;
+    margin: -60px;
+}
+.navButtons {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+}
+.navButtons a {
+    height: 30px;
+}
+a {
+    transition: .5s;
+}
+a:hover {
+    color: rgb(255, 173, 50);
+}
+main {
+    padding: 0 50px;
+}
+.logo {
+    width: 700px;
+    margin: 40px calc(50% - 350px);
+}
+.slider {
+    margin: 60px auto;
+}
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    width: 65%;
+    margin: 80px auto;
+}
+.flex h2 {
+    width: auto;
+    margin: 50px -50px;
+}
+h4 {
+    color: white;
+    width: 150px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    opacity: 0%;
+    display: block;
+    margin: calc(468px*0.5 - 20px) calc(299px*0.5 - 75px);
+    pointer-events: none;
+}
+h5 {
+    text-align: center;
+    font-size: 0.9em;
+}
+p {
+    width: 55%;
+    margin: auto;
+    text-align: left;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.offerImgs {
+    display: flex;
+    width: 65%;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+.offerImgs section{
+    background-color: black;
+    height: 469px;
+}
+.offerImgs section:hover img {
+    opacity: 20%;
+}
+.offerImgs section:hover h4{
+    opacity: 100%;
+}
+.offerImgs img {
+    transition: .5s;
+}
+table {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+}
+td, th{
+    border-left: 30px solid transparent;
+}
+.associations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 60px -50px;
+    padding: 50px;
+}
+.associations img {
+    opacity: 60%;
+    margin: 30px;
+    filter: invert(1);
+    transition: 800ms;
+}
+.associations img:hover {
+    opacity: 100%;
+}
+footer {
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+}
