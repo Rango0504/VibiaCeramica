@@ -44,8 +44,21 @@ main {
     width: 700px;
     margin: 40px calc(50% - 350px);
 }
-.slider {
-    margin: 60px auto;
+.swiper {
+    margin-top: 50px;
+}
+.swiper-slide img {
+    width: 70%;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.swiper-button-prev {
+    color: black !important;
+}
+.swiper-button-next {
+    color: black !important; 
 }
 h1 {
     font-size: 30px;
@@ -129,6 +142,14 @@ td, th{
 }
 .associations img:hover {
     opacity: 100%;
+}
+.associationsMain {
+    padding: 0;
+    background-color: black;
+}
+.associationsMain img{
+    width: 120px;
+    filter: none;
 }
 footer {
     align-items: center;
