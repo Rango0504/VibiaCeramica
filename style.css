@@ -6,9 +6,6 @@
     color: black;
 }
 body {
-    background-image: url(imgs/marble.jpg);
-    background-size: 100%;
-    background-attachment: scroll;
     margin: 0;
 }
 nav {
