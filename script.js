@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper',{
-    speed: 1300,
+    speed: 1400,
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',

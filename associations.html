@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibia Ceramica</title>
+    <title>VibiaCeramica</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,18 +18,17 @@
             <a href="offer.html">Oferta</a>
             <a href="associations.html">Marki</a>
             <a href="contact.html">Kontakt</a>
+            <a href="https://facebook.com/VibiaCeramica"><img src="imgs/fb.svg" height="24px"></a>
         </div>
     </nav>
     <main>
         <div class="associations">
             <a href="https://www.abk.it/it/"><img src="imgs/associatons/ABK_logoB.png"></a>
-            <a href="https://www.casabella.com/"><img src="imgs/associatons/CASABELLA-LOGO-VETTERIALE.png"></a>
             <a href="https://www.fioranese.it/"><img src="imgs/associatons/Fioranese_logo.png"></a>
             <a href="https://www.gardenia.it/"><img src="imgs/associatons/gardenia-new_dark.png"></a>
             <a href="https://apavisa.com/"><img src="imgs/associatons/Logo-APAVISA-n-e1577359474601.png"></a>
             <a href="https://www.versace.com/eu/"><img src="imgs/associatons/logo-versace.png"></a>
             <a href="https://www.avaceramica.it/"><img src="imgs/associatons/logo_AVA_white.png"></a>
-            <a href="http://www.colli.it/"><img src="imgs/associatons/logo_colli_bianco_piccolo.png"></a>
             <a href="https://www.kbm.com.pl/"><img src="imgs/associatons/logo_kbm.png"></a>
             <a href="https://www.lafabbrica.it/"><img src="imgs/associatons/logo_la_fabbrica_white.png"></a>
             <a href="https://www.profilpas.com/pl#gref"><img src="imgs/associatons/logo_profilpas.png"></a>
@@ -40,5 +39,35 @@
         <h5><a href="tel:+48 607 789 470">+48 607 789 470</a><br><a href="tel:+48 508 750 598">+48 508 750 598</a></h5>
         <h5>Copyright <a href="mailto:m.michal2003@gmail.com">Michał Mikołajczyk</a></h5>
     </footer>
+        <!-- Messenger Wtyczka czatu Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Wtyczka czatu code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+    
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "104139945273524");
+          chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+    
+        <!-- Your SDK code -->
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v13.0'
+            });
+          };
+    
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
 </body>
 </html>

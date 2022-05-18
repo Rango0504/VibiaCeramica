@@ -6,6 +6,9 @@
     color: black;
 }
 body {
+    /* background-image: url(imgs/marble.jpg);
+    background-size: 100%;
+    background-attachment: scroll; */
     margin: 0;
 }
 nav {
@@ -143,6 +146,9 @@ td, th{
 .associationsMain {
     padding: 0;
     background-color: black;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .associationsMain img{
     width: 120px;
@@ -151,5 +157,5 @@ td, th{
 footer {
     align-items: center;
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
