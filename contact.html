@@ -4,41 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibia Ceramica</title>
+    <title>VibiaCeramica</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="imgs/blackLogo.png" class="logo"></a>
+  <nav>
+    <a href="index.html"><img src="imgs/blackLogo.png" class="logo"></a>
+        <img src="imgs/bars.svg" id="bars">
         <div class="navButtons">
             <a href="index.html">Strona główna</a>
             <a href="offer.html">Oferta</a>
             <a href="associations.html">Marki</a>
             <a href="contact.html">Kontakt</a>
+            <a href="https://facebook.com/VibiaCeramica"><img src="imgs/fb.svg" height="24px"></a>
         </div>
-    </nav>
+  </nav>
     <main>
-        <h2>Odzwiedź nasz salon</h2>
+        <h2>Odwiedź nasz salon</h2>
         <p>Salon znajduje się w Osielsku, przy Szosie Gdańskiej. Lokalizacja umożliwia szybki i wygodny dojazd z Bydgoszczy oraz okolicznych gmin. Serdecznie zapraszamy do odwiedzenia naszego punktu i zapoznania się z naszą ofertą.</p>
         <table>
             <tr>
                 <th>Lokalizacja</th><th>Godzina otwarcia</th><th>Kontakt</th><th>Adres e-mail</th><th>Telefon</th>
             </tr>
             <tr>
-                <td>Szosa Gdańska 1</td><td>Pon.-Pt.: 9:00 - 18:00</td><td>Monika Gurzyńska</td><td><a href="mailto:monika@vibiaceramica.pl">monika@vibiaceramica.pl</a></td><td><a href="tel:+48 508 750 598">+48 508 750 598</a></td>
+                <td>Szosa Gdańska 1</td><td>Pon.-Pt.: 9:00 - 18:00</td><td>Monika Gurzyńska</td><td><a href="mailto:monika@vibiaceramica.pl">monika@vibiaceramica.pl</a></td><td><a href="tel:+48 508 750 598">+48508750598</a></td>
             </tr>
             <tr>
-                <td>86-031 Osielsko</td><td>Sb.: 09:00 - 14:00</td><td>Anna Kontna</td><td><a href="mailto:anna@vibiaceramica.pl">anna@vibiaceramica.pl</a></td><td><a href="tel:+48 607 789 470">+48 607 789 470</a></td>
+                <td>86-031 Osielsko</td><td>Sb.: 09:00 - 14:00</td><td>Anna Kontna</td><td><a href="mailto:anna@vibiaceramica.pl">anna@vibiaceramica.pl</a></td><td><a href="tel:+48 607 789 470">+48607789470</a></td>
             </tr>
         </table>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4783.070132223727!2d18.052666!3d53.172381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703113bf606b6c7%3A0x6cb9502fcebbfbab!2sSzosa%20Gda%C5%84ska%201%2C%2086-031%20Osielsko!5e0!3m2!1spl!2spl!4v1644019833370!5m2!1spl!2spl" width="100%" height="550" style="border:1px solid black;" allowfullscreen="no" loading="lazy"></iframe>
-    </main>
+        <div class="padding">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4783.070132223727!2d18.052666!3d53.172381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4703113bf606b6c7%3A0x6cb9502fcebbfbab!2sSzosa%20Gda%C5%84ska%201%2C%2086-031%20Osielsko!5e0!3m2!1spl!2spl!4v1644019833370!5m2!1spl!2spl" width="100%" height="550" style="border:1px solid black;" allowfullscreen="no" loading="lazy"></iframe>
+        </div>
+      </main>
     <footer class="flex">
         <h5><a href="tel:+48 607 789 470">+48 607 789 470</a><br><a href="tel:+48 508 750 598">+48 508 750 598</a></h5>
         <h5>Copyright <a href="mailto:m.michal2003@gmail.com">Michał Mikołajczyk</a></h5>
     </footer>
+        <!-- Messenger Wtyczka czatu Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Wtyczka czatu code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+    
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "104139945273524");
+          chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+    
+        <!-- Your SDK code -->
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v13.0'
+            });
+          };
+    
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script src="script.js"></script>
 </body>
 </html>
