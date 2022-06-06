@@ -14,8 +14,6 @@ nav {
     justify-content: space-between;
 }
 nav .logo {
-    float: right;
-    width: 200px;
     margin: -60px;
 }
 #bars {
@@ -34,10 +32,6 @@ a {
 }
 a:hover {
     color: rgb(255, 173, 50);
-}
-.logo {
-    width: 700px;
-    margin: 40px calc(50% - 350px);
 }
 .swiper {
     margin-top: 50px;
@@ -124,13 +118,15 @@ table td, table th {
 .associations {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+.invert {
+    filter: invert(1);
 }
 .associations img {
     opacity: 60%;
     margin: 30px;
-    filter: invert(1);
     transition: 800ms;
 }
 .associations img:hover {
@@ -215,8 +211,12 @@ footer {
 }
 @media screen and (max-width: 800px){
     h2 {
-        font-size: 30px;
+        font-size: 28px;
         margin-top: 10px;
+    }
+    h4 {
+        font-size: 25px;
+        margin: calc(350px*0.5 - 25px*0.5) calc(223px*0.5 - 150px*0.5);
     }
     p {
         font-size: 16px;
@@ -231,5 +231,18 @@ footer {
     }
     .offerImgs section img {
         height: 350px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer h5 {
+        margin-top: 10px;
     }
 }
